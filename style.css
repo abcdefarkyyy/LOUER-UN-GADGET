@@ -406,7 +406,7 @@ header { /* Header ini mungkin di dalam .app-shell-container */
     flex-grow: 1; /* Agar mengisi sisa ruang */
     padding: 0 20px; /* Padding kiri kanan 20px */
     background-color: #ffffff;
-    max-height: 250px; /* Sesuaikan tinggi maksimum sesuai kebutuhan Anda */
+    max-height: 300px; /* Sesuaikan tinggi maksimum sesuai kebutuhan Anda */
     overflow-y: auto; /* Mengaktifkan scroll vertikal jika konten melebihi max-height */
     padding-bottom: 5px; /* Memberi ruang di bawah agar tidak terpotong oleh bottom-nav-bar */
 
