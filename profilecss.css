@@ -1,0 +1,220 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px; /* Max width for larger screens */
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Profile Header --- */
+        .profile-header {
+            background-color: #5c6bc0; /* Warna aplikasi utama */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .profile-header .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #a7b7e0; /* Warna placeholder */
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            color: #fff;
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            overflow: hidden; /* For actual image */
+        }
+
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+
+        .profile-header p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        /* --- Profile Info Section --- */
+        .profile-info {
+            padding: 20px;
+            flex-grow: 1; /* Allow section to grow */
+        }
+
+        .info-card {
+            background-color: #fefefe;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-card i {
+            font-size: 1.2em;
+            color: #2c2c2c;
+            margin-right: 15px;
+            width: 30px; /* Fixed width for icon alignment */
+            text-align: center;
+        }
+
+        .info-card .text-content h3 {
+            margin: 0;
+            font-size: 1em;
+            color: #777;
+            font-weight: 400;
+        }
+
+        .info-card .text-content p {
+            margin: 2px 0 0;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* --- Buttons Section --- */
+        .profile-actions {
+            padding: 0 20px 20px; /* Padding for buttons */
+        }
+
+        .profile-actions button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-actions button i {
+            margin-right: 10px;
+        }
+
+        .profile-actions .edit-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+        .profile-actions .edit-button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .profile-actions .change-password-button {
+            background-color: #FFC107; /* Amber */
+            color: #333;
+        }
+
+        .profile-actions .change-password-button:hover {
+            background-color: #e0b000;
+            transform: translateY(-2px);
+        }
+
+        .profile-actions .logout-button {
+            background-color: #F44336; /* Red */
+            color: white;
+        }
+
+        .profile-actions .logout-button:hover {
+            background-color: #da190b;
+            transform: translateY(-2px);
+        }
+
+        /* --- Responsive Adjustments --- */
+        @media (max-width: 600px) {
+            .profile-header {
+                padding: 15px;
+            }
+
+            .profile-header .back-button {
+                top: 15px;
+                left: 15px;
+                font-size: 1.3em;
+            }
+
+            .profile-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5em;
+            }
+
+            .profile-header h1 {
+                font-size: 1.5em;
+            }
+
+            .profile-header p {
+                font-size: 0.8em;
+            }
+
+            .profile-info {
+                padding: 15px;
+            }
+
+            .info-card {
+                padding: 12px 15px;
+            }
+
+            .info-card i {
+                font-size: 1em;
+                margin-right: 10px;
+            }
+
+            .info-card .text-content h3 {
+                font-size: 0.9em;
+            }
+
+            .info-card .text-content p {
+                font-size: 1em;
+            }
+
+            .profile-actions {
+                padding: 0 15px 15px;
+            }
+
+            .profile-actions button {
+                padding: 10px;
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+        }

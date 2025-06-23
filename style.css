@@ -1,0 +1,1028 @@
+/* ========================================================================= */
+/* --- FONT IMPORTS --- */
+/* ========================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* ========================================================================= */
+/* --- GLOBAL RESET & BASE STYLES --- */
+/* ========================================================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box; /* Pastikan padding dan border termasuk dalam width/height */
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Default font */
+    line-height: 1.6;
+}
+
+/* Base styles for all buttons (can be extended by specific button classes) */
+button {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+/* ========================================================================= */
+/* --- LANDING PAGE (index.html) SPECIFIC STYLES --- */
+/* ========================================================================= */
+.landing-body { /* Class untuk body di index.html */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Untuk menengahkan jika konten tidak mengisi penuh */
+    overflow-x: hidden;
+    /* Pastikan tidak ada background-color default yang mengganggu gambar */
+}
+
+/* The main container for the landing page (with drone background) */
+.landing-page-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/drone-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content-box {
+    position: absolute;
+    bottom: 0; /* Menempel ke bawah layar */
+    left: 50%;
+    transform: translateX(-50%); /* Tengah horizontal */
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding: 40px 25px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+}
+
+.content-box h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    color: #333;
+    font-weight: 700;
+}
+
+.content-box p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Get Started Button (Main Landing Page) */
+.get-started-link {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    max-width: 250px;
+}
+
+.get-started-btn {
+    background-color: #bdbdbd;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+}
+
+.get-started-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+/* ========================================================================= */
+/* --- LOGIN PAGE (login.html) SPECIFIC STYLES --- */
+/* ========================================================================= */
+.login-body { /* Class untuk body di login.html */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+    padding: 20px; /* Padding untuk mencegah konten menempel di tepi */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #bdbdbd;
+    outline: none;
+}
+
+.login-btn {
+    background-color: #bdbdbd;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.login-btn:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.signup-link {
+    margin-top: 25px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.signup-link a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #000000;
+}
+
+/* Message Area (for login/signup) */
+.message-area {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    text-align: center;
+    min-height: 20px;
+    box-sizing: border-box;
+}
+
+.message-area.success {
+    background-color: #e6ffe6;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.message-area.error {
+    background-color: #ffe6e6;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+
+/* ========================================================================= */
+/* --- APP SHELL (home.html, map.html, etc.) SPECIFIC STYLES --- */
+/* ========================================================================= */
+.app-body { /* Class untuk body di home.html, map.html, dll. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eaf7f7; /* Warna latar belakang app-body di desktop/tablet */
+    overflow: hidden; /* Mencegah scroll di body utama */
+    padding: 20px; /* Padding di sekitar container aplikasi di desktop */
+    box-sizing: border-box;
+}
+
+/* The main container for the app-like structure */
+.app-shell-container { /* Ganti .container di home.html, map.html menjadi .app-shell-container */
+    width: 100%;
+    max-width: 375px; /* Lebar standar untuk desain smartphone */
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    overflow: hidden; /* Penting untuk border-radius pada gambar atas dan agar konten tidak keluar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh; /* Sesuaikan tinggi agar mirip gambar */
+    height: 100%; /* Memastikan kontainer mengisi tinggi parent flex */
+    position: relative; /* Untuk posisi header/nav bar */
+}
+
+/* Header Section (for app-shell, containing menu icon) */
+header { /* Header ini mungkin di dalam .app-shell-container */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Pastikan ikon di atas gambar */
+}
+
+.menu-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon i {
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Top Image Section (for app-shell) */
+.top-image-section {
+    width: 100%;
+    height: 250px; /* Tinggi gambar atas */
+    overflow: hidden;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar mengisi area tanpa distorsi */
+    display: block;
+}
+
+/* Content Wrapper inside app-shell-container */
+.content-wrapper {
+    flex-grow: 1; /* Agar mengisi sisa ruang yang tersedia di antara header dan nav */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Mengaktifkan scroll untuk konten utama jika diperlukan */
+    -webkit-overflow-scrolling: touch; /* Untuk smooth scrolling di iOS */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+.content-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+/* All content sections that switch */
+.content-section {
+    display: none; /* Sembunyikan semua secara default */
+    flex-direction: column; /* Sesuaikan layout internal */
+    flex-grow: 1; /* Agar mengisi ruang yang tersedia */
+    background-color: #ffffff;
+    padding: 0; /* Padding akan diatur di dalamnya */
+    padding-bottom: 80px; /* Ruang untuk nav bar */
+    overflow-y: auto; /* Agar konten internal bisa scroll jika terlalu panjang */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.content-section::-webkit-scrollbar {
+    display: none;
+}
+.content-section.active-page {
+    display: flex; /* Tampilkan section yang aktif */
+}
+
+
+/* Select Device Section */
+.select-device-section {
+    padding: 20px 0 20px 20px; /* Padding kiri saja, padding kanan akan diatur oleh scroll wrapper */
+    background-color: #ffffff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.select-device-section h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    padding-right: 20px; /* Agar judul tidak ikut terpotong scroll */
+}
+
+/* CSS untuk scroll horizontal pada pilihan device */
+.device-options-scroll-wrapper {
+    overflow-x: auto; /* Kunci untuk scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* Untuk smooth scrolling di iOS */
+    white-space: nowrap; /* Mencegah item baris baru */
+    padding-bottom: 10px; /* Memberi sedikit ruang di bawah scrollbar jika muncul */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.device-options-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.device-options {
+    display: inline-flex; /* Menggunakan inline-flex agar flex item tetap dalam satu baris dan bisa di-scroll */
+    gap: 10px; /* Jarak antar tombol */
+    padding-right: 20px; /* Padding di akhir daftar tombol agar tidak terlalu mepet */
+    min-width: max-content; /* SANGAT PENTING: Memastikan lebar kontainer menyesuaikan dengan kontennya, memicu scroll */
+}
+
+.option-button {
+    background-color: #eee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0; /* SANGAT PENTING: Mencegah tombol mengecil */
+}
+
+.option-button.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Device Card Section (scroll vertikal) */
+.device-card-section {
+    flex-grow: 1; /* Agar mengisi sisa ruang */
+    padding: 0 20px; /* Padding kiri kanan 20px */
+    background-color: #ffffff;
+    max-height: 250px; /* Sesuaikan tinggi maksimum sesuai kebutuhan Anda */
+    overflow-y: auto; /* Mengaktifkan scroll vertikal jika konten melebihi max-height */
+    padding-bottom: 5px; /* Memberi ruang di bawah agar tidak terpotong oleh bottom-nav-bar */
+
+    -webkit-overflow-scrolling: touch; /* Untuk smooth scrolling di iOS */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+.device-card-section::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+
+.device-card {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex; /* Default display */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px; /* Memberi sedikit jarak antar kartu */
+}
+
+/* Tambahan CSS untuk menyembunyikan kartu */
+.device-card.hidden {
+    display: none;
+}
+
+.device-info h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.device-info p {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.device-info .price {
+    background-color: #ccc;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #333;
+}
+
+.device-image-container {
+    width: 120px; /* Lebar gambar laptop */
+    height: 80px; /* Tinggi gambar laptop */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; /* Warna placeholder untuk gambar laptop */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.device-card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Pastikan gambar laptop terlihat jelas */
+}
+
+/* Bottom Navigation Bar (menempel di bawah) */
+.bottom-nav-bar {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* Menggunakan 'center' agar item navigasi ke tengah */
+    gap: 20px; /* Memberi jarak antar item navigasi */
+    align-items: center;
+    border-top: 1px solid #eee;
+    /* border-bottom-left-radius dan right-radius akan mengikuti parent .app-shell-container */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
+    position: fixed; /* Menggunakan 'fixed' agar selalu di bawah viewport */
+    bottom: 0; /* Menempel di bagian paling bawah */
+    left: 0; /* Pastikan menempel dari kiri */
+    right: 0; /* Pastikan menempel dari kanan */
+    z-index: 100; /* Memastikan di atas konten lain */
+}
+
+/* Untuk menempelkan nav bar ke lebar .app-shell-container saat di desktop */
+.app-body .bottom-nav-bar {
+    max-width: 375px; /* Sesuaikan dengan max-width .app-shell-container */
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 25px; /* Ambil radius dari parent container */
+    border-bottom-right-radius: 25px;
+}
+
+
+.nav-item {
+    color: #888;
+    font-size: 1.3em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px; /* Ukuran area klik */
+    height: 45px; /* Ukuran area klik */
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item.active {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item i {
+    pointer-events: none; /* Mencegah ikon mengganggu klik pada link */
+}
+
+/* Home Page Content (inside app-shell) */
+.home-main-section { /* Jika ini adalah section di dalam content-wrapper */
+    padding: 20px; /* Tambahkan padding di sini */
+    flex-grow: 1; /* Pastikan mengisi ruang */
+}
+
+/* Section Halaman yang Lain */
+#activity-section, #likes-section, #history-section, #map-section {
+    padding: 20px; /* Tambahkan padding agar ada jarak konten dari tepi */
+    text-align: center;
+    flex-grow: 1; /* Pastikan mengisi ruang */
+}
+#activity-section h2, #likes-section h2, #history-section h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+#activity-section {
+    background-color: #ffe0b2; /* Contoh warna latar belakang */
+}
+#likes-section {
+    background-color: #fce4ec; /* Contoh warna latar belakang */
+}
+#history-section {
+    /* Pastikan display-nya flex saat aktif (dari .content-section.active-page) */
+    /* Pastikan ada padding agar konten tidak menempel */
+    padding: 20px; /* Tambahkan atau sesuaikan padding */
+    /* Jika ada masalah, coba sementara hapus align-items atau justify-content */
+    /* align-items: flex-start; */ /* Pastikan konten di awal */
+    /* justify-content: flex-start; */ /* Pastikan konten di awal */
+    background-color: #d1c4e9; /* Warna latar belakang dari kode sebelumnya */
+}
+#history-section p {
+    color: rgb(0, 0, 0); /* Warna merah untuk "No history :(" */
+    font-size: 1.1em; /* Ukuran font agar lebih jelas */
+    text-align: center; /* Untuk menengahkan pesan */
+    width: 100%; /* Agar pesan menempati lebar penuh */
+    margin-top: 20px; /* Jarak dari judul */
+}
+
+/* Map Section */
+/* --- START OF MAP SECTION FIX --- */
+#map-section {
+    /* Pastikan mengambil tinggi penuh yang tersedia */
+    height: 100%;
+    flex-grow: 1; /* Biarkan tumbuh dan mengisi ruang induk */
+    padding: 0; /* Tanpa padding internal */
+    background-color: #f0f0f0;
+    overflow: hidden; /* Penting untuk menampung gambar */
+    display: none; /* Dikontrol oleh JS */
+    flex-direction: column; /* Agar children mengalir secara vertikal */
+}
+#map-section.active-page {
+    display: flex;
+}
+
+#map-section .static-map {
+    width: 100%;
+    height: 100%; /* Buat gambar mengisi seluruh bagian */
+    object-fit: cover; /* Menutupi area, memotong jika perlu */
+    display: block; /* Hapus spasi inline default */
+}
+/* --- END OF MAP SECTION FIX --- */
+
+
+/* ========================================================================= */
+/* --- SEARCH OVERLAY STYLES --- */
+/* ========================================================================= */
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-popup {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+    position: relative;
+}
+
+.search-popup h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-popup input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.search-popup input[type="text"]:focus {
+    border-color: #333;
+}
+
+.search-popup button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-popup button:hover {
+    background-color: #555; /* Warna hover yang lebih gelap */
+}
+
+.search-close-button {
+    position: absolute;
+    top: 10px; /* Disamakan dengan .desc-popup-close */
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5em; /* Disamakan */
+    color: #888;
+    cursor: pointer;
+    padding: 0; /* Diatur agar tidak ada padding ekstra */
+    border-radius: 0; /* Hilangkan radius supaya konsisten */
+    transition: color 0.3s ease;
+}
+
+.search-close-button:hover {
+    color: #000; /* Sama seperti .desc-popup-close:hover */
+    background-color: transparent; /* Tidak perlu background */
+}
+
+
+/*FAVORITE*/
+    .card-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.like-button, .desc-button {
+    background: transparent;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.like-button:hover, .desc-button:hover {
+    color: #333;
+}
+
+.like-button.liked {
+    color: red;
+}
+
+    .desc-popup-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1100;
+    }
+    .desc-popup-overlay.active {
+        display: flex;
+    }
+    .desc-popup-box {
+        background: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        max-width: 400px;
+        width: 90%;
+        text-align: left;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        position: relative;
+    }
+    .desc-popup-close {
+        position: absolute;
+        top: 10px; right: 15px;
+        background: none;
+        border: none;
+        font-size: 1.5em;
+        color: #888;
+        cursor: pointer;
+    }
+    .desc-popup-close:hover {
+        color: #000;
+    }
+
+/*HISTORY*/
+#history-section {
+    background-color: #d1c4e9;
+    justify-content: center;
+    align-items: center;
+    /* HAPUS display: none; agar tidak menimpa class active-page */
+}
+
+/* --- New: Sidebar Menu Styles --- */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1200; /* Higher than other overlays */
+    display: flex;
+    justify-content: flex-start; /* Align sidebar to the left */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sidebar-menu {
+    width: 280px; /* Lebar sidebar */
+    max-width: 80%; /* Batas lebar agar responsif */
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%); /* Sembunyikan ke kiri secara default */
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-overlay.active .sidebar-menu {
+    transform: translateX(0); /* Tampilkan saat aktif */
+}
+
+.close-sidebar-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+.sidebar-menu h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 1.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Agar daftar mengisi ruang */
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: color 0.2s ease;
+}
+
+.sidebar-menu a i {
+    margin-right: 15px;
+    width: 25px; /* Fixed width for icons */
+    text-align: center;
+    color: #777;
+}
+
+.sidebar-menu a:hover {
+    color: #5c6bc0; /* Warna aktif/hover */
+}
+
+.sidebar-menu a:hover i {
+    color: #5c6bc0;
+}
+/* --- End New: Sidebar Menu Styles --- */
+
+/* Existing styles below this line (just for context) */
+/* --- General Content Section & Navigation Styles (Crucial for page switching) --- */
+.content-section {
+    display: none; /* Sembunyikan semua secara default */
+    flex-direction: column; /* Konten di dalamnya mengalir vertikal */
+    flex-grow: 1; /* Biarkan mengisi ruang vertikal yang tersedia */
+    padding-bottom: 80px; /* Ruang untuk nav bar */
+    overflow-y: auto; /* Aktifkan scrolling jika konten melebihi tinggi */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* ========================================================================= */
+/* --- RESPONSIVENESS (MEDIA QUERIES) --- */
+/* ========================================================================= */
+
+/* Tablet & Mobile (default, apply to screens <= 768px) */
+/* Aturan di luar media query sudah menjadi default untuk mobile-first */
+
+/* Tablet (768px dan lebih kecil) */
+@media (max-width: 768px) {
+    /* Umum untuk semua halaman */
+    body {
+        padding: 10px; /* Kurangi padding di body untuk mobile */
+    }
+
+    /* Main Landing Page (index.html) adjustments */
+    .content-box {
+        padding: 30px 20px;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+    .content-box h1 {
+        font-size: 1.8em;
+    }
+    .content-box p {
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+    .get-started-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* Login Page (login.html) adjustments */
+    .login-container {
+        padding: 30px;
+    }
+    .login-container h2 {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+    .input-group input {
+        padding: 10px 12px;
+    }
+    .login-btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* App Shell Container (home.html, map.html) */
+    .app-body .bottom-nav-bar { /* Override desktop fixed width for mobile */
+        max-width: none;
+        border-radius: 0; /* Full width on mobile, no corner radius */
+        left: 0;
+        right: 0;
+    }
+    .app-shell-container {
+        border-radius: 0; /* App shell takes full screen on mobile */
+        min-height: 100vh; /* Use full viewport height */
+        box-shadow: none; /* No shadow when full screen */
+    }
+    .app-body {
+        padding: 0; /* No padding around app-shell container on mobile */
+        background-color: #f9f9f9; /* Background matches app-shell */
+    }
+
+    /* Home Page Content (home.html) adjustments */
+    .home-content {
+        padding: 40px 25px;
+    }
+    .home-content h1 {
+        font-size: 1.8em;
+    }
+    .home-content p {
+        font-size: 1em;
+    }
+    .back-to-login-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Smartphone (480px dan lebih kecil) */
+@media (max-width: 480px) {
+    /* Main Landing Page (index.html) adjustments */
+    .content-box {
+        padding: 25px 15px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .content-box h1 {
+        font-size: 1.6em;
+    }
+    .content-box p {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+    .get-started-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    /* Login Page (login.html) adjustments */
+    .login-container {
+        padding: 25px;
+    }
+    .login-container h2 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    .input-group label {
+        font-size: 0.9em;
+    }
+    .input-group input {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+    .login-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    .signup-link {
+        font-size: 0.85em;
+    }
+
+    /* Home Page Content (home.html) adjustments */
+    .home-content {
+        padding: 30px 20px;
+    }
+    .home-content h1 {
+        font-size: 1.6em;
+    }
+    .home-content p {
+        font-size: 0.9em;
+    }
+    .back-to-login-btn {
+        padding: 8px 18px;
+        font-size: 0.85em;
+    }
+
+    /* App Shell Specific Adjustments */
+    .top-image-section {
+        height: 200px; /* Sedikit kurangi tinggi gambar atas di HP kecil */
+    }
+    .select-device-section h2 {
+        font-size: 1.2em;
+    }
+    .option-button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+    .device-info h3 {
+        font-size: 1.1em;
+    }
+    .device-info p {
+        font-size: 0.8em;
+    }
+    .device-info .price {
+        padding: 4px 8px;
+        font-size: 0.7em;
+    }
+    .nav-item {
+        font-size: 1.1em;
+        width: 40px;
+        height: 40px;
+    }
+}

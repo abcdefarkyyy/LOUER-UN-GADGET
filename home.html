@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUER UN GADGET HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <section id="home-main-section" class="content-section active-page">
+                <section class="top-image-section">
+                    <img src="img/bg home.jpg" alt="Workspace" class="main-image">
+                </section>
+                <section class="select-device-section">
+                    <h2>Select device</h2>
+                    <div class="device-options-scroll-wrapper">
+                        <div class="device-options">
+                            <button class="option-button" data-category="phone">Phone</button>
+                            <button class="option-button active" data-category="laptop">Laptop</button>
+                            <button class="option-button" data-category="drone">Drone</button>
+                            <button class="option-button" data-category="camera">Camera</button>
+                            <button class="option-button" data-category="smartwatch">Smartwatch</button>
+                            <button class="option-button" data-category="monitor">Monitor</button>
+                        </div>
+                    </div>
+                </section>
+                <div class="sidebar-overlay" id="sidebarOverlay">
+        <div class="sidebar-menu" id="sidebarMenu">
+            <button class="close-sidebar-button" id="closeSidebarButton">&times;</button>
+            <h2>Settings & Options</h2>
+            <ul>
+                <li><a href="#" id="profileButton"><i class="fas fa-user-circle"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About App</a></li>
+                <li><a href="#" id="logoutButton"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+                <section class="device-card-section">
+                    <div class="device-card" data-category="laptop" data-device-id="1">
+    <div class="device-info">
+                            <h3>Advan Workplus</h3>
+                            <p>Ryzern5</p>
+                            <span class="price">25K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/laptop.png" alt="Advan Workplus Laptop" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card" data-category="laptop" data-device-id="2">
+                        <div class="device-info">
+                            <h3>MacBook Air M2</h3>
+                            <p>Apple M2 Chip</p>
+                            <span class="price">75K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/laptop.png" alt="MacBook Air M2" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card" data-category="laptop" data-device-id="3">
+                        <div class="device-info">
+                            <h3>Dell XPS 15</h3>
+                            <p>Intel i7 12th Gen</p>
+                            <span class="price">60K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/laptop.png" alt="Dell XPS 15" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card hidden" data-category="phone" data-device-id="4">
+                        <div class="device-info">
+                            <h3>iPhone 15 Pro Max</h3>
+                            <p>A17 Bionic Chip</p>
+                            <span class="price">30K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/sumsang.png" alt="iPhone 15 Pro Max" class="device-card-image">
+                        </div>
+                    </div>
+                    <div class="device-card hidden" data-category="phone" data-device-id="5">
+                        <div class="device-info">
+                            <h3>Samsung Galaxy S24 Ultra</h3>
+                            <p>Snapdragon 8 Gen 3</p>
+                            <span class="price">28K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/sumsang.png" alt="Samsung Galaxy S24 Ultra" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card hidden" data-category="drone" data-device-id="6">
+                        <div class="device-info">
+                            <h3>DJI Mavic 3</h3>
+                            <p>5.1K Camera</p>
+                            <span class="price">40K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/dronee.png" alt="DJI Mavic 3" class="device-card-image">
+                        </div>
+                    </div>
+                    <div class="device-card hidden" data-category="drone" data-device-id="7">
+                        <div class="device-info">
+                            <h3>Autel Robotics EVO Lite+</h3>
+                            <p>6K Camera</p>
+                            <span class="price">35K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/dronee.png" alt="Autel Robotics EVO Lite+" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card hidden" data-category="camera" data-device-id="8">
+                        <div class="device-info">
+                            <h3>Sony Alpha a7 III</h3>
+                            <p>Full-Frame Mirrorless</p>
+                            <span class="price">50K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/camera.png" alt="Sony Alpha a7 III" class="device-card-image">
+                        </div>
+                    </div>
+                    <div class="device-card hidden" data-category="camera" data-device-id="9">
+                        <div class="device-info">
+                            <h3>Canon EOS R6 Mark II</h3>
+                            <p>Full-Frame Mirrorless</p>
+                            <span class="price">55K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/camera.png" alt="Canon EOS R6 Mark II" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card hidden" data-category="smartwatch" data-device-id="10">
+                        <div class="device-info">
+                            <h3>Apple Watch Series 9</h3>
+                            <p>GPS + Cellular</p>
+                            <span class="price">15K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/smartwatch.png" alt="Apple Watch Series 9" class="device-card-image">
+                        </div>
+                    </div>
+                    <div class="device-card hidden" data-category="smartwatch" data-device-id="11">
+                        <div class="device-info">
+                            <h3>Samsung Galaxy Watch 6</h3>
+                            <p>Bluetooth + LTE</p>
+                            <span class="price">12K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/smartwatch.png" alt="Samsung Galaxy Watch 6" class="device-card-image">
+                        </div>
+                    </div>
+
+                    <div class="device-card hidden" data-category="monitor" data-device-id="12">
+                        <div class="device-info">
+                            <h3>Dell UltraSharp U2723QE</h3>
+                            <p>27" 4K USB-C Hub Monitor</p>
+                            <span class="price">20K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/monitor.png" alt="Dell UltraSharp U2723QE" class="device-card-image">
+                        </div>
+                    </div>
+                    <div class="device-card hidden" data-category="monitor" data-device-id="13">
+                        <div class="device-info">
+                            <h3>LG UltraGear 27GN950-B</h3>
+                            <p>27" 4K UHD Nano IPS Gaming Monitor</p>
+                            <span class="price">22K/day</span>
+                            <div class="card-buttons">
+                                <button class="like-button" title="Suka"><i class="fas fa-heart"></i></button>
+                                <button class="desc-button" title="Lihat Deskripsi"><i class="fas fa-circle-info"></i></button>
+                            </div>
+                        </div>
+                        <div class="device-image-container">
+                            <img src="img/monitor.png" alt="LG UltraGear 27GN950-B" class="device-card-image">
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+  <section id="map-section" class="content-section">
+  <img src="img/maps.png" alt="maps" class="static-map">
+
+
+</section>
+
+            <section id="activity-section" class="content-section">
+                <h2>Activity Feed</h2>
+                <p>Daftar aktivitas atau notifikasi terbaru.</p>
+            </section>
+
+            <section id="likes-section" class="content-section">
+                <h2>Your Likes</h2>
+                <p>Item-item yang Anda sukai akan tampil di sini.</p>
+            </section>
+
+            <section id="history-section" class="content-section" style="background-color: #d1c4e9;">
+    <h2>Order History</h2>
+    <div class="history-content" id="historyContent">
+        <p style="color: rgb(157, 157, 157);">No history</p>
+    </div>
+</section>
+
+
+
+            <div class="search-overlay" id="searchOverlay">
+                <div class="search-popup">
+                    <button class="search-close-button" id="closeSearchButton">&times;</button>
+                    <h3>Cari Gadget</h3>
+                    <input type="text" placeholder="Masukkan nama gadget...">
+                    <button>Cari</button>
+                </div>
+            </div>
+        </div>
+        <nav class="bottom-nav-bar">
+            <a href="#" class="nav-item" id="searchButton" data-target="search-overlay">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="nav-item active" data-target="home-main-section">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#" class="nav-item" data-target="map-section">
+                <i class="fas fa-map-marked-alt"></i>
+            </a>
+            <a href="#" class="nav-item" data-target="likes-section">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#" class="nav-item" data-target="history-section">
+    <i class="fas fa-list-alt"></i>
+</a>
+
+        </nav>
+    </div>
+    <div class="desc-popup-overlay" id="descPopupOverlay">
+        <div class="desc-popup-box">
+            <button class="desc-popup-close" id="descPopupClose">&times;</button>
+            <h3 id="descTitle">Deskripsi Gadget</h3>
+            <p id="descContent">Isi deskripsi akan muncul di sini.</p>
+        </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // =======================
+    // 1. FILTER KATEGORI
+    // =======================
+    const optionButtons = document.querySelectorAll('.option-button');
+    const deviceCards = document.querySelectorAll('.device-card');
+
+    function filterDevices(selectedCategory) {
+        deviceCards.forEach(card => {
+            const cardCategory = card.dataset.category;
+            if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
+    optionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            optionButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            const selectedCategory = this.dataset.category;
+            filterDevices(selectedCategory);
+        });
+    });
+
+    const initialActiveCategoryButton = document.querySelector('.option-button.active');
+    if (initialActiveCategoryButton) {
+        const initialCategory = initialActiveCategoryButton.dataset.category;
+        filterDevices(initialCategory);
+    }
+
+    // =======================
+    // 2. NAVIGASI BAWAH
+    // =======================
+    const navItems = document.querySelectorAll('.bottom-nav-bar .nav-item');
+    const contentSections = document.querySelectorAll('.content-section');
+
+    function showPage(targetId) {
+        contentSections.forEach(section => section.classList.remove('active-page'));
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.classList.add('active-page');
+            targetSection.scrollTop = 0;
+        }
+    }
+
+    navItems.forEach(item => {
+    item.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetId = this.dataset.target;
+
+        if (targetId === 'search-overlay') {
+            searchOverlay.classList.add('active');
+            navItems.forEach(nav => nav.classList.remove('active'));
+        } else {
+            searchOverlay.classList.remove('active');
+            navItems.forEach(nav => nav.classList.remove('active'));
+            this.classList.add('active');
+            showPage(targetId);
+
+            // BAGIAN INI YANG PENTING
+            if (targetId === 'likes-section') {
+                renderLikes();
+            }
+            if (targetId === 'history-section') { // PASTIKAN BAGIAN INI ADA DAN BENAR
+                renderHistory(); // Ini akan memanggil fungsi renderHistory()
+            }
+        }
+    });
+});
+
+    const initialActiveNavItem = document.querySelector('.bottom-nav-bar .nav-item.active');
+    if (initialActiveNavItem) {
+        const initialTargetId = initialActiveNavItem.dataset.target;
+        showPage(initialTargetId);
+    }
+
+    // =======================
+    // 3. POPUP PENCARIAN
+    // =======================
+    const searchButton = document.getElementById('searchButton');
+    const searchOverlay = document.getElementById('searchOverlay');
+    const closeSearchButton = document.getElementById('closeSearchButton');
+
+    closeSearchButton.addEventListener('click', function () {
+        searchOverlay.classList.remove('active');
+    });
+
+    searchOverlay.addEventListener('click', function (event) {
+        if (event.target === searchOverlay) {
+            searchOverlay.classList.remove('active');
+        }
+    });
+    // 7. SIDEBAR MENU (OPTIONS/SETTINGS)
+            // =======================
+            const menuIcon = document.querySelector('.menu-icon');
+            const sidebarOverlay = document.getElementById('sidebarOverlay');
+            const closeSidebarButton = document.getElementById('closeSidebarButton');
+            const sidebarMenu = document.getElementById('sidebarMenu'); // Referensi ke menu itu sendiri
+
+            menuIcon.addEventListener('click', function() {
+                sidebarOverlay.classList.add('active');
+            });
+
+            closeSidebarButton.addEventListener('click', function() {
+                sidebarOverlay.classList.remove('active');
+            });
+
+            // Close sidebar if clicking outside the sidebar menu
+            sidebarOverlay.addEventListener('click', function(event) {
+                if (event.target === sidebarOverlay) { // Only close if clicking on the overlay itself, not the menu
+                    sidebarOverlay.classList.remove('active');
+                }
+            });
+            // =======================
+            // 8. LOGOUT FUNCTIONALITY
+            // =======================
+            const logoutButton = document.getElementById('logoutButton');
+
+            if (logoutButton) {
+                logoutButton.addEventListener('click', function(event) {
+                    event.preventDefault(); // Mencegah default perilaku link
+
+                    // Anda bisa menambahkan logika logout tambahan di sini,
+                    // seperti menghapus token sesi atau data pengguna dari localStorage
+                    // Contoh: localStorage.removeItem('userToken');
+
+                    // Arahkan ke halaman login
+                    window.location.href = 'login.html'; // Ganti 'login.html' jika nama file Anda berbeda
+                });
+            }
+            // Di bagian JavaScript di index.html
+const profileButton = document.getElementById('profileButton');
+if (profileButton) {
+    profileButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'profile.html'; // Pastikan ini benar
+    });
+}
+
+    // =======================
+    // 4. TOMBOL LIKE
+    // =======================
+    const likedDevices = [];
+    const likesSection = document.getElementById('likes-section');
+
+    document.querySelectorAll('.like-button').forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent card click if there was one
+            const card = this.closest('.device-card');
+            const deviceId = card.dataset.deviceId;
+
+            this.classList.toggle('liked');
+            const isLiked = this.classList.contains('liked');
+
+            const index = likedDevices.findIndex(item => item.dataset.deviceId === deviceId);
+
+            if (isLiked && index === -1) {
+                // Clone the card and add it to likedDevices
+                const clonedCard = card.cloneNode(true);
+                // Remove the buttons from the cloned card for simplicity in the likes section
+                const clonedButtons = clonedCard.querySelector('.card-buttons');
+                if (clonedButtons) {
+                    clonedButtons.remove();
+                }
+                likedDevices.push(clonedCard);
+            } else if (!isLiked && index !== -1) {
+                likedDevices.splice(index, 1);
+            }
+
+            // Only render when the likes section is actually visible
+            if (likesSection.classList.contains('active-page')) {
+                renderLikes();
+            }
+        });
+    });
+
+    function renderLikes() {
+        likesSection.innerHTML = `<h2>Your Likes</h2>`; // Clear previous content
+
+        if (likedDevices.length === 0) {
+            likesSection.innerHTML += `<p>No favorite items yet. Click the heart icon on a device to add it here!</p>`;
+        } else {
+            likedDevices.forEach(card => {
+                likesSection.appendChild(card.cloneNode(true)); // Append a fresh clone
+            });
+        }
+    }
+
+    // =======================
+    // 5. RIWAYAT (HISTORY)
+    // =======================
+    // Example history items (in a real app, this would come from a server/database)
+    const historyItems = [ // Biarkan kosong untuk menguji pesan "No history :("
+        {
+            id: 'h1',
+            name: 'Advan Workplus',
+            date: '2025-06-15',
+            status: 'Completed',
+            price: '25K/day',
+            image: 'img/laptop.png',
+            category: 'laptop'
+        },
+        {
+            id: 'h2',
+            name: 'iPhone 15 Pro Max',
+            date: '2025-06-10',
+            status: 'Completed',
+            price: '30K/day',
+            image: 'img/sumsang.png',
+            category: 'phone'
+        },
+        {
+            id: 'h3',
+            name: 'DJI Mavic 3',
+            date: '2025-06-01',
+            status: 'Completed',
+            price: '40K/day',
+            image: 'img/dronee.png',
+            category: 'drone'
+        },
+        // Add more history items as needed
+    ];
+
+    const historySection = document.getElementById('history-section');
+
+    function renderHistory() {
+        historySection.innerHTML = `<h2>Order History</h2>`; // Clear previous content
+
+        if (historyItems.length === 0) {
+            historySection.innerHTML += `<p>No order history found.</p>`;
+        } else {
+            historyItems.forEach(item => {
+                const historyCard = document.createElement('div');
+                historyCard.classList.add('device-card'); // Reuse device-card styling
+                historyCard.innerHTML = `
+                    <div class="device-info">
+                        <h3>${item.name}</h3>
+                        <p>Date: ${item.date}</p>
+                        <p>Status: <strong>${item.status}</strong></p>
+                        <span class="price">${item.price}</span>
+                    </div>
+                    <div class="device-image-container">
+                        <img src="${item.image}" alt="${item.name}" class="device-card-image">
+                    </div>
+                `;
+                historySection.appendChild(historyCard);
+            });
+        }
+    }
+
+    // =======================
+    // 5. POPUP DESKRIPSI
+    // =======================
+    const descPopupOverlay = document.getElementById('descPopupOverlay');
+    const descPopupClose = document.getElementById('descPopupClose');
+    const descTitle = document.getElementById('descTitle');
+    const descContent = document.getElementById('descContent');
+
+    const descriptions = {
+        "1": {
+            title: "Advan Workplus",
+            content: `Advan Workplus adalah laptop produktivitas terjangkau dengan spesifikasi sebagai berikut:<br><br>
+- Prosesor: AMD Ryzen 5 5500U (6 Core / 12 Thread)<br>
+- RAM: 8GB DDR4<br>
+- Penyimpanan: 512GB SSD NVMe<br>
+- Layar: 14 inch Full HD IPS<br>
+- GPU: Radeon Vega 7 Graphics<br>
+- Sistem Operasi: Windows 11 Home<br>
+- Konektivitas: Wi-Fi 5, Bluetooth 5.0<br>
+- Port: USB-C, HDMI, USB 3.0, Audio Jack<br>
+- Baterai: 48Wh – tahan hingga 8 jam pemakaian standar<br>
+- Berat: &plusmn;1.4 kg`
+        },
+        "2": {
+            title: "MacBook Air M2",
+            content: `MacBook Air M2 adalah laptop ultra-portable dari Apple dengan chip M2 yang efisien. <br><br>
+- Prosesor: Apple M2 chip (8-core CPU)<br>
+- GPU: 8-core or 10-core GPU<br>
+- RAM: Up to 24GB unified memory<br>
+- Penyimpanan: Up to 2TB SSD<br>
+- Layar: 13.6-inch Liquid Retina display<br>
+- Baterai: Up to 18 hours<br>
+- Berat: 1.24 kg`
+        },
+        "3": {
+            title: "Dell XPS 15",
+            content: `Dell XPS 15 adalah laptop premium yang dikenal dengan desain ramping dan performa tinggi.<br><br>
+- Prosesor: Up to Intel Core i9 12th Gen<br>
+- RAM: Up to 64GB DDR5<br>
+- Penyimpanan: Up to 4TB PCIe NVMe SSD<br>
+- Layar: 15.6-inch FHD+ or 3.5K OLED<br>
+- GPU: NVIDIA GeForce RTX 3050 Ti<br>
+- Baterai: 86Whr<br>
+- Berat: Starting at 1.92 kg`
+        },
+        "4": {
+            title: "iPhone 15 Pro Max",
+            content: `iPhone 15 Pro Max adalah smartphone flagship terbaru dari Apple dengan chipset bertenaga dan kamera canggih.<br><br>
+- Chip: A17 Bionic chip with 6-core CPU<br>
+- Layar: 6.7-inch Super Retina XDR display with ProMotion<br>
+- Kamera: Pro camera system (48MP Main, 12MP Ultra Wide, 12MP Telephoto)<br>
+- Baterai: All-day battery life<br>
+- Material: Titanium design`
+        },
+        "5": {
+            title: "Samsung Galaxy S24 Ultra",
+            content: `Samsung Galaxy S24 Ultra adalah smartphone Android premium dengan S Pen terintegrasi dan kamera inovatif.<br><br>
+- Prosesor: Snapdragon® 8 Gen 3 for Galaxy<br>
+- Layar: 6.8-inch Dynamic AMOLED 2X Display<br>
+- Kamera: Quad camera (200MP Wide, 12MP Ultra-Wide, 10MP Telephoto, 50MP Telephoto)<br>
+- Baterai: 5000 mAh<br>
+- Fitur: Built-in S Pen, Galaxy AI features`
+        },
+        "6": {
+            title: "DJI Mavic 3",
+            content: `DJI Mavic 3 adalah drone canggih untuk profesional dengan kamera Hasselblad dan waktu terbang yang lama.<br><br>
+- Kamera: Hasselblad (20MP 4/3 CMOS) + Tele camera<br>
+- Waktu Terbang: Up to 46 minutes<br>
+- Jarak Transmisi: 15 km (FCC)<br>
+- Fitur: Omnidirectional Obstacle Sensing, Advanced RTH`
+        },
+        "7": {
+            title: "Autel Robotics EVO Lite+",
+            content: `Autel Robotics EVO Lite+ menawarkan kemampuan fotografi udara yang luar biasa dengan sensor besar.<br><br>
+- Kamera: 1-inch CMOS sensor, 6K/30fps video<br>
+- Waktu Terbang: Up to 40 minutes<br>
+- Jarak Transmisi: 12 km (FCC)<br>
+- Fitur: Dynamic Track 2.1, RYYB Color Filter Array`
+        },
+        "8": {
+            title: "Sony Alpha a7 III",
+            content: `Sony Alpha a7 III adalah kamera mirrorless full-frame yang serbaguna untuk foto dan video.<br><br>
+- Sensor: 24.2MP Full-Frame Exmor R BSI CMOS Sensor<br>
+- Video: UHD 4K30p with HLG & S-Log3 Gammas<br>
+- Autofocus: 693-Point Hybrid AF System<br>
+- Stabilisasi: 5-Axis SteadyShot INSIDE Stabilization`
+        },
+        "9": {
+            title: "Canon EOS R6 Mark II",
+            content: `Canon EOS R6 Mark II adalah kamera mirrorless full-frame yang cepat dan handal.<br><br>
+- Sensor: 24.2MP Full-Frame CMOS Sensor<br>
+- Video: 6K Oversampled UHD 4K, 10-bit Internal<br>
+- Autofocus: Dual Pixel CMOS AF II<br>
+- Kecepatan: Up to 40 fps E. Shutter, 12 fps Mech. Shutter`
+        },
+        "10": {
+            title: "Apple Watch Series 9",
+            content: `Apple Watch Series 9 adalah smartwatch canggih dengan fitur kesehatan dan konektivitas.<br><br>
+- Chip: S9 SiP<br>
+- Layar: Always-On Retina display<br>
+- Fitur: Blood Oxygen app, ECG app, Temperature Sensing, Crash Detection, Double Tap gesture`
+        },
+        "11": {
+            title: "Samsung Galaxy Watch 6",
+            content: `Samsung Galaxy Watch 6 adalah smartwatch Android yang stylish dan kaya fitur.<br><br>
+- Prosesor: Exynos W930 Dual-Core<br>
+- Layar: Sapphire Crystal display<br>
+- Fitur: ECG, BIA, Heart Rate Monitor, Sleep Tracking, Fall Detection`
+        },
+        "12": {
+            title: "Dell UltraSharp U2723QE",
+            content: `Dell UltraSharp U2723QE adalah monitor 4K dengan USB-C hub yang ideal untuk produktivitas.<br><br>
+- Ukuran: 27 inci<br>
+- Resolusi: 3840 x 2160 (4K UHD)<br>
+- Panel: IPS Black<br>
+- Fitur: USB-C (90W power delivery), RJ45, HDMI, DisplayPort`
+        },
+        "13": {
+            title: "LG UltraGear 27GN950-B",
+            content: `LG UltraGear 27GN950-B adalah monitor gaming 4K UHD dengan refresh rate tinggi.<br><br>
+- Ukuran: 27 inci<br>
+- Resolusi: 3840 x 2160 (4K UHD)<br>
+- Refresh Rate: 144Hz (OverClock 160Hz)<br>
+- Panel: Nano IPS<br>
+- Fitur: G-SYNC Compatible, FreeSync Premium Pro, HDR600`
+        }
+    };
+
+
+    document.querySelectorAll('.desc-button').forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent card click if there was one
+            const deviceCard = button.closest('.device-card');
+            const id = deviceCard.getAttribute('data-device-id');
+            const data = descriptions[id];
+
+            if (data) {
+                descTitle.textContent = data.title;
+                descContent.innerHTML = data.content;
+                descPopupOverlay.classList.add('active');
+            } else {
+                descTitle.textContent = "Description Not Available";
+                descContent.innerHTML = "<p>No detailed description for this device.</p>";
+                descPopupOverlay.classList.add('active');
+            }
+        });
+    });
+
+    descPopupClose.addEventListener('click', () => {
+        descPopupOverlay.classList.remove('active');
+    });
+
+    descPopupOverlay.addEventListener('click', (e) => {
+        if (e.target === descPopupOverlay) {
+            descPopupOverlay.classList.remove('active');
+        }
+    });
+
+    // Initial render for Likes and History if they are the default active tab (unlikely, but good practice)
+    if (likesSection.classList.contains('active-page')) {
+        renderLikes();
+    }
+    if (historySection.classList.contains('active-page')) {
+        renderHistory();
+    }
+});
+
+    descButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const deviceCard = button.closest('.device-card');
+            const id = deviceCard.getAttribute('data-device-id');
+            const data = descriptions[id];
+
+            if (data) {
+                descTitle.textContent = data.title;
+                descContent.innerHTML = data.content;
+                descPopupOverlay.classList.add('active');
+            }
+        });
+    });
+
+    descPopupClose.addEventListener('click', () => {
+        descPopupOverlay.classList.remove('active');
+    });
+
+    descPopupOverlay.addEventListener('click', (e) => {
+        if (e.target === descPopupOverlay) {
+            descPopupOverlay.classList.remove('active');
+        }
+    });
+</script>
+
+    <!-- Popup Deskripsi -->
+<div class="desc-popup-overlay" id="descPopupOverlay">
+    <div class="desc-popup-box">
+        <button class="desc-popup-close" id="descPopupClose">&times;</button>
+        <h3 id="descTitle">Deskripsi Gadget</h3>
+        <p id="descContent">Isi deskripsi akan muncul di sini.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Louer Un Gadget</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="profilecss.css"> 
+</head>
+<body>
+    <div class="container">
+        <section class="profile-header">
+            <a href="home.html" class="back-button" id="backToHomeButton">
+                <i class="fas fa-arrow-left"></i> </a>
+            <div class="profile-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>parkyyy</h1>
+            <p>parkyyy@gmail.com</p>
+        </section>
+
+        <section class="profile-info">
+            <div class="info-card">
+                <i class="fas fa-user"></i>
+                <div class="text-content">
+                    <h3>Full Name</h3>
+                    <p>parkyyy</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div class="text-content">
+                    <h3>Email Address</h3>
+                    <p>parkyyy@gmail.com</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <div class="text-content">
+                    <h3>Phone Number</h3>
+                    <p>+62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="text-content">
+                    <h3>Address</h3>
+                    <p>Jl. Kendung No. 123, Surabaya, Indonesia</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-birthday-cake"></i>
+                <div class="text-content">
+                    <h3>Date of Birth</h3>
+                    <p>17 September 1990</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-actions">
+            <button class="edit-button"><i class="fas fa-edit"></i> Edit Profile</button>
+            <button class="change-password-button"><i class="fas fa-key"></i> Change Password</button>
+            <button class="logout-button" id="profileLogoutButton"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fungsionalitas tombol kembali
+            const backToHomeButton = document.getElementById('backToHomeButton');
+            if (backToHomeButton) {
+                backToHomeButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    window.history.back(); // Kembali ke halaman sebelumnya
+                    // Atau bisa juga: window.location.href = 'index.html';
+                });
+            }
+
+            // Fungsionalitas tombol Logout di halaman profil
+            const profileLogoutButton = document.getElementById('profileLogoutButton');
+            if (profileLogoutButton) {
+                profileLogoutButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    // Anda bisa menambahkan logika logout tambahan di sini,
+                    // seperti menghapus token sesi atau data pengguna dari localStorage
+                    // Contoh: localStorage.removeItem('userToken');
+
+                    // Arahkan ke halaman login
+                    window.location.href = 'login.html'; // Ganti 'login.html' jika nama file Anda berbeda
+                });
+            }
+
+            // Contoh fungsionalitas untuk tombol Edit Profile (bisa dikembangkan lebih lanjut)
+            const editButton = document.querySelector('.edit-button');
+            if (editButton) {
+                editButton.addEventListener('click', function() {
+                    alert('Edit Profile clicked! (Fungsionalitas ini perlu dikembangkan lebih lanjut)');
+                    // Di sini Anda bisa mengarahkan ke halaman edit_profile.html atau menampilkan form modal
+                });
+            }
+
+            // Contoh fungsionalitas untuk tombol Change Password
+            const changePasswordButton = document.querySelector('.change-password-button');
+            if (changePasswordButton) {
+                changePasswordButton.addEventListener('click', function() {
+                    alert('Change Password clicked! (Fungsionalitas ini perlu dikembangkan lebih lanjut)');
+                    // Di sini Anda bisa mengarahkan ke halaman change_password.html atau menampilkan form modal
+                });
+            }
+        });
+    </script>
+</body>
+</html>
